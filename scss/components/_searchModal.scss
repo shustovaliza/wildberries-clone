@@ -1,0 +1,28 @@
+.header__search {
+  width: 40%;
+}
+
+.header__input {
+  padding: 0.8em;
+  width: 100%;
+  font-size: 2em;
+  border-radius: 0.8em;
+  outline: none;
+  background-color: #f2c7f7;
+  font-weight: bold;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+#clear-search-button {
+  font-size: 1.8em;
+  font-weight: bold;
+  background-color: $color_orchid;
+  border: solid 1px black;
+  width: 17%;
+  border-radius: 0.8em;
+  height: 54px;
+
+  &:hover {
+    background-color: #e682cb;
+  }
+}

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+  <link rel="stylesheet" href="./scss/style.scss">
+  <script src="https://kit.fontawesome.com/dd55be8efe.js" crossorigin="anonymous"></script>
+  <link rel="shortcut icon" href="./img/header/unnamed.webp" type="image/x-icon">
+  <title>WB</title>
+</head>
+<body>
+<div class="wrapper">
+  <div class="quick-view__container" id="quick-view-modal">
+  </div>
+  <div class="basket__modal">
+    <div class="basket__content">
+        <button class="close">&times;</button>
+        <p class="text">Корзина</p>
+        <table class="purchases"></table>
+        <div class="basket__footer">
+        <p class="result"></p>
+        <button class="clear">Очистить корзину</button>
+        </div>
+    </div>
+  </div>
+  <header class="header__container">
+      <div class="header__logo">
+        <p class="logo">Wildberries</p>
+      </div>
+      <form class="header__search" id="search__id">
+        <input name="search-input" class="header__input" id="search" type="text" placeholder="Поиск по товарам" />
+      </form>
+      <button id="clear-search-button">Очистить поиск</button>
+      <div class="header__user">
+        <div class="header__basket">
+          <button ><img class="header__basket-img" src="./img/header/shopping-cart.svg" alt="shopping cart"/>
+          </button>
+        </div>
+      </div>
+  </header>
+  <main class="main">
+    <div class="sliderwrap">
+      <div class="slider container">
+        <div class="slide active">
+          <img src="./img/slides/big_woman_3_2_23.jpg" alt="Big sale" />
+        </div>
+        <div class="slide">
+          <img src="./img/slides/big_hits_3_2_23.jpg" alt="Women sale" />
+        </div>
+        <div class="slide">
+          <img src="./img/slides/big_skidki_3_2_23.jpg" alt="Week sale" />
+        </div>
+        <div class="slide">
+          <img src="./img/slides/big_vesna_15_2_23.jpg" alt="Spring sale" />
+        </div>
+        <div class="slide">
+          <img src="./img/slides/digital.jpg" alt="Digital" />
+        </div>
+        <div id="btn-prev"></div>
+        <div id="btn-next"></div>
+      </div>
+      <div class="wrapper__dots">
+        <span class="dot active"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+      </div>
+    </div>
+    <div class="goods container" id="goods-container">
+      <p class="goods__text" id="goods__text">Хиты продаж</p>
+    </div>
+  </main>
+  <footer class="main__footer">
+      <div class="main__footer-social">
+        <a href="https://facebook.com" target="_blank" class="fab fa-facebook-f"></a>
+        <a href="https://twitter.com" target="_blank" class="fab fa-twitter"></a>
+        <a href="https://pinterest.com" target="_blank" class="fab fa-pinterest"></a>
+        <a href="https://instagram.com" target="_blank" class="fab fa-instagram"></a>
+        <a href="https://vk.com" target="_blank" class="fab fa-vk"></a>
+        <a href="https://teachmeskills.by/" target="_blank" class="fas fa-rss"></a>
+      </div>
+      <div class="main__footer-copy">&copy2023 Wildberries</div>
+  </footer>
+</div>
+<script src="scripts/index.js" type="module"></script>
+</body>
+</html>
